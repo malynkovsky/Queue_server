@@ -1,0 +1,51 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <html lang="ru" locale="ru" ></html>
+    <head>
+            <title>Queue server</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script src="jquery-3.3.1.js"></script>       
+    </head>
+    <body>
+        <div class="glass">
+            <div class="water">
+                <div class="innerglass">
+                    
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="script_main.js"></script>
+	<script type="text/javascript" src="script_up.js"></script>
+        <script id="water_d" disabled="true" type="text/javascript" src="script_down.js"></script>
+        <script type="text/javascript" src="script_math.js"></script>
+        <button onclick="script_up">Water Up</button>
+        <button onclick="script_down.js">Start</button>
+	<button onclick="enable()">Start</button>
+	<button onclick="disable()">Stop</button>
+	<script>
+	function disable() {
+	document.getElementById("water_d").disabled = true;
+	}
+	function enable() {
+	document.getElementById("water_d").disabled = false;
+	}
+	</script>
+        <div class="task3"> 
+        <form name="test" method="post" action="script_math.js">
+        <p><b>Введите два числа:</b><br>
+        <input class="a" type="text" size="5">
+        <input class="b" type="text" size="5">
+        </p>
+
+        <p><input type="submit" value="Сложить">
+        <input type="reset" value="Очистить"></p>
+        </form>
+
+        <form action="handler.php">
+        <p><b>Ответ сервера:</b> задача успешно выполнена!</p>
+        </form>
+
+        </div>
+    </body>
+</html> 
