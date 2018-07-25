@@ -1,11 +1,13 @@
 body {
   font-family:  Arial, Helvetica, sans-serif;
   background-color: #002338;
+  color: white;
   font-weight: 300;
   font-size: 17px;
 }
 
 .glass {
+    
     background-color: #ffca03;
     height: 120px;
     width: 120px;
